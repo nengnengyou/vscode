@@ -6,12 +6,12 @@ export default new Router({
     routes:[
         {
             path:'/login',
-            components:()=>import('@/views/login/loginPage')
+            component:()=>import('@/views/login/loginPage')
         },
         // 重定向
         {
             path:'/',
-            components:()=>import('@/views/login/loginPage'),
+            component:()=>import('@/views/login/loginPage'),
             redirect:'/login'
 
         }
